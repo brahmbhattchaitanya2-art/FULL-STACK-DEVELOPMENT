@@ -1,0 +1,48 @@
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<form action="submit.html" method="get">
+<h2> User Details Form</h2>
+
+<label for="email">Email:</label>
+<input type="email" name="email" id="email" placeholder="name@123" required><br><br>
+
+<label for="pwd">Password:</label>
+<input type="Password" name="pwd" id="pwd"  placeholder="123456" required minlength="6"><br><br>
+
+ <label for="date">Exam Date:</label>
+<input type="date"  name="date" id="date"  default="5">
+
+<p>Gender
+<input type="radio" name="gender" value="Male" checked>Male
+<input type="radio" name="gender" value="Female" >Female <br> <br>
+
+<label for="age">Age:</label>
+<input type="number" name="age" id="age" value="20" min="1" max="100">
+<br><br>
+<label for="city">Select City:</label>
+<select name="city" id="city">
+<option value="select" selected disabled> Select City</option>
+<option value="d">Delhi</option>
+<option value="g">Goa</option> <br><br>
+</select><br><br>
+
+
+
+
+<label for="msg">Message:</label><br>
+<textarea name="msg" id="msg" rows="5" cols="20"> Test message:</textarea> <br><br>
+
+
+
+
+<input type="submit" value="Submit">
+
+
+<input type="reset" value="Reset">
+
+
+</body>
+<html>

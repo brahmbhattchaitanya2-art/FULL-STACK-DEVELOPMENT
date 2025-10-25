@@ -1,0 +1,79 @@
+<html>
+<head>
+<title>Form 3</title>	
+</head>
+<body>
+
+<!-- FORM SHOULD WRAP THE TABLE -->
+<form action="submit.html" method="get">
+<table border="4" cellpadding="10">
+
+<tr>
+  <th colspan="2">Pizza Shop 2.0</th>  <!-- match figure text -->
+</tr>
+
+<tr>
+  <th>Name</th>
+  <td>
+    <input type="text" name="name" id="uname" autofocus
+           autocomplete="on" placeholder="Enter Username"
+           required maxlength="30">
+  </td>
+</tr>
+
+<tr>
+  <th>Pizza Topping</th>
+  <td>
+    <!-- all radios in ONE group: same name -->
+    <input type="radio" name="topping" value="Supreme"> Supreme<br>
+    <input type="radio" name="topping" value="Vegetarian"> Vegetarian<br>
+    <input type="radio" name="topping" value="Hawaiian"> Hawaiian
+  </td>
+</tr>
+
+<tr>
+  <th>Pizza Sauce</th>
+  <td>
+    <select name="sauce">
+      <!-- default shown option should NOT be disabled -->
+      <option value="Tomato" selected>Tomato</option>
+      <option value="Red">Red</option>
+      <option value="Yellow">Yellow</option>
+      <option value="Blue">Blue</option>
+    </select>
+  </td>
+</tr>
+
+<tr>
+  <th>Optional Extras</th>
+  <td>
+    <!-- names should avoid spaces -->
+    <input type="checkbox" name="extra_cheese" value="Extra Cheese" checked> Extra Cheese
+    <input type="checkbox" name="gluten_free_base" value="Gluten Free Base"> Gluten Free Base
+  </td>
+</tr>
+
+<tr>
+  <th>Delivery Instructions:</th>
+  <td>
+    <!-- missing = after name, and keep in same row -->
+    <textarea name="address" rows="4" cols="40" placeholder="Enter Your Instructions"></textarea>
+  </td>
+</tr>
+
+<tr>
+  <th colspan="2">
+    <input type="submit" value="Send my order">
+  </th>
+</tr>
+
+
+
+</table>
+<figure>
+<figcaption><b>Figure 8.1 </b> Example of HTML form Pages</figcaption>
+</figure
+</form>
+
+</body>
+</html>

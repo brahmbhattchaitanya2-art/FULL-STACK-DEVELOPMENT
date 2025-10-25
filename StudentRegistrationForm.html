@@ -1,0 +1,118 @@
+<html>
+<head>
+<title> Task Form</title>	
+</head>
+<body>
+
+
+ 
+ <table border = "4" cellpadding = "10" >
+ <h2> Student Registration Form</h2>
+ <form action="submit.html" method ="get">
+ <fieldset>
+  <legend> Information</legend>
+  
+ <label for ="username">Name:</label>
+  
+ <input type ="text" name ="Username"
+				id="uname" autofocus
+				autocomplete ="on"
+				placeholder="Enter Username"
+				required maxlength="20"><br><br>
+				
+					<label for ="password">Password:</label>
+						<input type ="password" name ="password"
+						id="password" 
+						
+						placeholder="Enter Password"
+						required minlength="6"><br><br>
+						
+							<label for ="contact">Contact:</label>
+								<input type ="tel" name ="contact"
+								id="contact" 
+								placeholder="Enter Contact"
+								required maxlength="30"><br><br>
+								
+									<label for ="email">Email:</label>
+										<input type ="email" name ="email"
+										id="email" 
+								placeholder="Enter Email"
+								required maxlength="30"><br><br>
+								
+								
+								<label for ="gender">Gender:</label><br>
+								 <input type ="radio" name ="Gender"
+									 value="male" checked>male
+									<input type ="radio" name ="Gender"
+									 value="female" >female<br><br>
+									 
+									 <label for ="gender">Hobbies:</label><br>
+								 <input type ="radio" name ="Hobbies"
+									 value="MUSIC" checked>MUSIC
+									<input type ="radio" name ="Hobbies"
+									 value="SPORT" >SPORT<br><br>
+									 
+									  <fieldset>
+									<legend> Additional Information</legend>
+  
+									 <label for ="date"> Date:</label>
+									 <input type ="date" name ="number"
+										id="date" autofocus
+										autocomplete ="on"> <br><br>
+										
+										
+									  <label for="yourage">Your Age:</label>
+										<input type="number" name="yourage" id="yourage"
+										placeholder="Enter Age" required><br><br>
+										
+									 <label for ="favcol">Favarite Color:</label>
+								<input type ="Color" name ="favcol"
+								id="favcolol" ><br><br>
+								
+								 <label for ="pbr">Preferred Browser:</label>
+								<select name="pbr" id="pbr" required>
+								<option value="" selected disabled>Select Browser: </option>
+								<option value="b1">Google</option>
+								<option value="b2">FireFox</option>
+								<option value="b3">Safari</option>
+								</select><br><br>
+								
+								
+								 <label for ="sb">Select Branch:</label>
+								<select name="sb" id="sb" required>
+								<option value="" selected disabled>Select Branch: </option>
+								<option value="s1">IT</option>
+								<option value="s2">AIML</option>
+								<option value="s3">CE</option>
+								</select><br><br>
+						</fieldset>
+										
+				<fieldset>
+						 <legend> Feedback</legend>
+							 <label for="message">Your Message:</label><br>
+								<textarea name="message" id="message" rows="4" cols="30" 
+								placeholder="Enter Your Message"></textarea><br><br>
+							
+							<label for="satl">Satisfaction Level:</label>
+							<input type="range" name="satl" id="satl" ><br><br>
+				</fieldset>
+				<fieldset>
+				 <legend> Submit Section</legend>
+				
+					<input type="submit" value="Submit Form">
+					<input type="reset" value="Reset Form">
+					<input type="submit"  value="Click Me">
+					<button type="submit">Submit (Button Tag)</button>
+				
+				
+				
+				</fieldset>
+				
+								 
+</fieldset>
+ </form>
+ 
+ </head>
+ </body>
+ </html>
+ 

@@ -1,0 +1,91 @@
+<h2>Student Registration Form</h2>
+<form action="submit.html" method="get">
+<!-- Personal Information -->
+<fieldset>
+<legend>Information</legend>
+<label for="uname">Username:</label>
+<input type="text" name="username" id="uname" autofocus autocomplete="on"
+placeholder="Enter username" required maxlength="20"><br><br>
+
+
+<label for="pwd">Password:</label>
+<input type="password" name="pwd" id="pwd" placeholder="Enter password" required
+minlength="6"><br><br>
+
+<label for="email">Email:</label>
+<input type="email" name="email" id="email" placeholder="name@example.com"
+required><br><br>
+
+<label for="phone">Phone:</label>
+<input type="tel" name="phone" id="phone" placeholder="1234567890"><br><br>
+
+<p>Gender:</p>
+<input type="radio" name="gender" value="male" checked> Male  
+<input type="radio" name="gender" value="female"> Female <br><br>
+
+<p>Hobbies:</p>
+
+<input type="checkbox" name="hobby" value="music" checked> Music
+<input type="checkbox" name="hobby" value="sports"> Sports <br><br>
+</fieldset>
+
+<!-- Preferences -->
+<fieldset>
+<legend>Additional Information</legend>
+<label for="dob">Date of Birth:</label>
+<input type="date" name="dob" id="dob" min="2025-09-07" max="2025-12-31"><br><br>
+
+<label for="age">Age:</label>
+<input type="number" name="age" id="age" min="1" max="100" step="1" value="18"><br><br>
+
+<label for="favcolor">Favorite Color:</label>
+<input type="color" name="favcolor" id="favcolor" value="#ff0000"><br><br>
+
+<label for="browser">Preferred Browser:</label>
+<input list="browsers" name="browser" id="browser">
+<datalist id="browsers">
+<option value="Chrome">
+<option value="Firefox">
+<option value="Edge">
+</datalist><br><br>
+
+<label for="degree">Select Branch:</label>
+<select name="degree_branch" id="degree">
+<option value="select" selected disabled>Select Branch</option>
+<optgroup label="Computer">
+<option value="cse">CSE</option>
+<option value="cst">CST</option>
+<option value="ce">CE</option>
+<option value="it">IT</option>
+</optgroup>
+<optgroup label="Other">
+<option value="ec">EC</option>
+<option value="civil">Civil</option>
+<option value="mech">Mechanical</option>
+</optgroup>
+</select><br><br>
+</fieldset>
+
+<fieldset>
+<legend>Feedback</legend>
+<label for="msg">Your Message:</label><br>
+<textarea name="message" id="msg" rows="5" cols="30">Enter your
+message</textarea><br><br>
+
+<label for="range">Satisfaction Level:</label>
+<input type="range" name="satisfaction" id="range" min="0" max="50" step="5"
+value="25"><br><br>
+
+<!-- Hidden value -->
+<input type="hidden" name="userid" value="12345">
+</fieldset>
+
+<!-- Form Buttons -->
+<fieldset>
+<legend>Submit Section</legend>
+<input type="submit" value="Submit Form">
+<input type="reset" value="Reset Form">
+<input type="button" value="Click Me">
+<button type="submit">Submit (Button Tag)</button>
+</fieldset>
+</form>
