@@ -1,0 +1,92 @@
+<!---DOCTYPE html--->
+<html>
+<head>
+  <title>Form 1 Example</title>	
+</head>
+<body bgcolor="orange">
+
+<h2>Form Example</h2>
+<form action="submit.html" method="get">
+  <fieldset >
+    <legend>Sign Up</legend>
+
+    <img src="photo.jpg" alt="Hello" width="200" height="100"><br><br>
+
+    <!-- Username -->
+    <label for="username">Username:</label>
+    <input type="text" name="username" id="username" 
+           autocomplete="on" placeholder="Enter Username"
+           required maxlength="30"><br><br>
+				
+    <!-- Password -->
+    <label for="password">Password:</label>
+    <input type="password" name="password" id="password" 
+           placeholder="Enter Password" required minlength="6"><br><br>
+						
+    <!-- Contact -->
+    <label for="contact">Contact:</label>
+    <input type="tel" name="contact" id="contact"
+           placeholder="Enter Contact" required maxlength="15"><br><br>
+								
+    <!-- Email -->
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email"
+           placeholder="Enter Email" required><br><br>
+								
+    <!-- Gender -->
+    <label>Gender:</label>
+    <input type="radio" name="gender" value="male" checked> Male
+    <input type="radio" name="gender" value="female"> Female<br><br>
+									
+    <!-- Area of Interest -->
+    <label>Area of Interest:</label>
+    <input type="checkbox" name="interest" value="DS" checked> DS
+    <input type="checkbox" name="interest" value="DBMS"> DBMS
+    <input type="checkbox" name="interest" value="CN" checked> CN
+    <input type="checkbox" name="interest" value="FSD"> FSD<br><br>
+									 
+    <!-- Age -->
+    <label for="age">Age:</label>
+    <input type="range" name="age" id="age" >
+									
+    <label for="yourage">Your Age:</label>
+    <input type="number" name="yourage" id="yourage"
+           placeholder="Enter Age" required><br><br>
+									
+    <!-- Number -->
+    <label for="number">Number:</label>
+    <input type="number" name="number" id="number"
+           placeholder="Enter Number" required><br><br>
+												
+    <!-- DOB -->
+    <label for="dob">DOB:</label>
+    <input type="date" name="dob" id="dob" required><br><br>
+										
+    <!-- Department -->
+    <label for="department">Department:</label>
+    <select name="department" id="department" required>
+      <option value="" selected disabled>Select Department</option>
+      <option value="sy1">SY1</option>
+      <option value="sy2">SY2</option>
+      <option value="sy3">SY3</option>
+    </select><br><br>
+										
+    
+										
+    <!-- Address -->
+    <label for="address">Address:</label>
+    <textarea name="address" id="address" rows="4" cols="30" >Enter Your Address:</textarea><br><br>
+										
+    <!-- Upload CV -->
+    <label for="cv">Upload CV:</label>
+    <input type="file" name="cv" id="cv" required><br><br>
+										
+    <!-- Buttons -->
+    <input type="submit" value="Click Me">
+    <input type="reset" value="Reset">
+											
+  </fieldset>
+</form>
+
+</body>
+</html>

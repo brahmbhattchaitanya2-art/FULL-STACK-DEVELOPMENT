@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bullet Styles and Nested Lists</title>
+</head>
+<body>
+    <h1>Bullet Styles and Nested Lists</h1>
+    
+    <h2>Various Bullet Styles</h2>
+    
+    <h3>Disc Bullets</h3>
+    <ul type="disc">
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Orange</li>
+    </ul>
+    
+    <h3>Circle Bullets</h3>
+    <ul type="circle">
+        <li>Red</li>
+        <li>Green</li>
+        <li>Blue</li>
+    </ul>
+    
+    <h3>Square Bullets</h3>
+    <ul type="square">
+        <li>Cat</li>
+        <li>Dog</li>
+        <li>Bird</li>
+    </ul>
+    
+    <h3>Numbered List</h3>
+    <ol type="1">
+        <li>First</li>
+        <li>Second</li>
+        <li>Third</li>
+    </ol>
+    
+    <h3>Alphabetic List</h3>
+    <ol type="A">
+        <li>Mathematics</li>
+        <li>Science</li>
+        <li>English</li>
+    </ol>
+    
+    <h2>Nested Lists</h2>
+    
+    <h3>Programming Languages</h3>
+    <ul type="disc">
+        <li>Frontend
+            <ul type="circle">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </li>
+        <li>Backend
+            <ul type="circle">
+                <li>Python</li>
+                <li>Java</li>
+                <li>PHP</li>
+            </ul>
+        </li>
+    </ul>
+    
+    <h3>Education Levels</h3>
+    <ol type="1">
+        <li>Primary
+            <ol type="A">
+                <li>Grade 1</li>
+                <li>Grade 2</li>
+            </ol>
+        </li>
+        <li>Secondary
+            <ol type="A">
+                <li>Grade 9</li>
+                <li>Grade 10</li>
+            </ol>
+        </li>
+    </ol>
+    
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML Example</title>
+</head>
+<body>
+
+<h1>HTML Example</h1>
+
+<p>Use p tag<br>to display text.</p>
+
+<pre>Use pre tag
+to display text.</pre>
+
+<ol type="a">
+  <li>list 1
+    <ul>
+      <li>list 1.1</li>
+      <li><mark>list 1.2</mark>
+        <ol type="I">
+          <li>list 1.2.3</li>
+          <li>list 1.2.2
+            <ol type="a">
+              <li>list 1.2.2.1</li>
+              <li><del>list 1.2.2.2</del></li>
+              <li><del>list 1.2.2.3</del></li>
+              <li><u>list 1.2.2.3</u></li>
+            </ol>
+          </li>
+          <li>list 1.2.1</li>
+        </ol>
+      </li>
+    </ul>
+  </li>
+
+  <li>List 2
+    <ol>
+      <li>List 2.1</li>
+      <li><b><i>List 2.2</i></b>
+        <ol type="i">
+          <li><u><a href="https://example.com" target="_blank">List 2.2.1</a></u> Link must be open in new window</li>
+          <li>List 2.2.2</li>
+        </ol>
+      </li>
+    </ol>
+  </li>
+
+  <li>List 3</li>
+</ol>
+
+</body>
+</html>
