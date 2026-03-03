@@ -1,0 +1,50 @@
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+/* Default: row layout (menu on right) */
+.container {
+display: flex;
+}
+/* Menu styling */
+nav {
+background: lightblue;
+padding: 10px;
+width: 30%;
+text-align: center;
+}
+/* Content styling */
+section {
+background: lightyellow;
+padding: 10px;
+width: 70%;
+
+}
+/* When viewport < 380px → stack vertically */
+@media (max-width: 380px) {
+.container {
+flex-direction: column;
+}
+nav{order:-1;}
+nav, section {
+width: 100%;
+}
+}
+</style>
+</head>
+<body>
+<div class="container">
+<section>
+<h2>Content Area</h2>
+<p>
+Resize the browser window. 
+When the width is 380px or wider, the menu appears on the right. 
+If it's smaller, the menu moves on top of the content.
+</p>
+</section>
+<nav>
+<a href="#">Home</a> |
+<a href="#">About</a> |
+<a href="#">Contact</a>
+</nav>
+</div>
+</body>

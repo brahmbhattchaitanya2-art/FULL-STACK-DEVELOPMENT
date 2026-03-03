@@ -1,0 +1,46 @@
+<head>
+<style>
+/* ===== Example 1: Fixed + Flexible Columns ===== */
+.grid1 {
+display: grid;
+grid-template-columns: 200px 1fr 2fr; /* 3 columns: fixed + flexible */
+grid-template-rows: 1fr 2fr; /* 2 flexible rows (1:2 ratio) */
+gap: 10px;
+background-color: lightgray;
+padding: 10px;
+margin-bottom: 40px;
+}
+/* ===== Example 2: Equal Columns ===== */
+grid2 {
+display: grid;
+grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+grid-template-rows: 100px; 
+height:150px;
+gap: 10px;
+background-color: lightblue;
+padding: 10px;
+}
+.item {
+background-color: steelblue;
+color: white;
+text-align: center;
+padding: 20px;
+border-radius: 10px;
+font-size: 18px;
+}
+</style>
+</head>
+<body>
+<div class="grid1">
+<div class="item">200px (Fixed)</div>
+<div class="item">1fr (Flexible)</div>
+<div class="item">2fr (Twice as Wide)</div>
+</div>
+<div class="grid2">
+<div class="item">Item 1</div>
+<div class="item">Item 2</div>
+<div class="item">Item 3</div>
+<div class="item">Item 4</div>
+
+</div>
+</body>

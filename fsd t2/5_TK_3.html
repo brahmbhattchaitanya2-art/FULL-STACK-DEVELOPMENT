@@ -1,0 +1,38 @@
+<!-- 
+Create a CSS program that demonstrates the use of multiple transitions on a single element.
+When the user hovers over the div, it should:
+• Increase in size,
+• Change background color,
+• Rotate 360 degrees,
+• Become circular,
+all with smooth timing, delay, and different transition durations. -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+ <head>
+<style>
+div {
+width: 100px; 
+height: 100px; 
+background: rgb(142, 7, 233);
+/* Transition for multiple properties including transform */
+transition-property: width, height, transform, background-color,border-radius;
+transition-duration: 3s, 5s, 4s,6s,6s; 
+transition-delay: 2s; /* Wait 2s before starting transition */
+transition-timing-function: ease-in-out; /* Smooth start and end */
+}
+div:hover {
+width: 150px;
+height: 150px;
+transform: rotate(360deg);
+background-color: yellow;
+border-radius:50%;
+}
+</style>
+</head>
+<body>
+<div></div>
+
+ </body>
+ </html>

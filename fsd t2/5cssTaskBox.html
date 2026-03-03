@@ -1,0 +1,35 @@
+<!-- one box 40 by 40 translate that box vertical to 270px with 2 sec duration with 3sec of delay then roatate
+ it 90degree 
+color of box consist rainbom effact from top left and bottom right -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+
+.box{width: 40px;
+    height: 40px;
+    border: 2px solid black
+}
+.box:hover{
+transform:translateY(70px)rotate(90deg) ;
+transition-duration: 2s;
+transition-delay: 3s;
+background: linear-gradient(to bottom right,red,green,yellow,red 10%,green 25% ,pink 40%);
+
+/* background-color: aqua; */
+
+
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="box"> Box</div>
+</body>
+</html>

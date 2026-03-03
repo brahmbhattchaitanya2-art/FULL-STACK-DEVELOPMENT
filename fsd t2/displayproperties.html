@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+  .box {
+background-color: lightblue;
+border: 2px solid navy;
+padding: 10px;
+margin: 5px;
+text-align: center;
+}
+/* INLINE - appear side by side */
+.inline div {
+display: inline;
+background-color: yellow;
+border: 1px solid orange;
+padding: 5px;
+}
+/* BLOCK - start on a new line */
+.block span {
+display: block;
+background-color: lightcoral;
+border: 1px solid red;
+color: white;
+padding: 10px;
+margin-bottom: 5px;
+}
+/* INLINE-BLOCK - side by side + size controllable */
+.inline-block div {
+display: inline-block;
+background-color: lightgreen;
+border: 2px solid green;
+width: 120px;
+height: 60px;
+line-height: 60px;
+margin: 5px;
+}
+/* NONE - hidden element */
+.none p {
+display: none;
+}
+
+
+
+</style>
+
+</head>
+<body>
+    <body>
+<h2>CSS Display Property Example</h2>
+<!-- INLINE -->
+<h3>display: inline</h3>
+<div class="inline box">
+<div>Inline 1</div>
+<div>Inline 2</div>
+<div>Inline 3</div>
+</div>
+<p> These elements appear <strong>side by side</strong>; width and height cannot be set individually.</p>
+<!-- BLOCK -->
+<h3>display: block</h3>
+<div class="block box">
+<span>Block 1</span>
+<span>Block 2</span>
+<span>Block 3</span>
+</div>
+<p> Each element starts on a <strong>new line</strong> and takes full width.</p>
+<!-- INLINE-BLOCK -->
+<h3>display: inline-block</h3>
+<div class="inline-block box">
+<div>Box 1</div>
+<div>Box 2</div>
+<div>Box 3</div>
+</div>
+<p> These elements sit <strong>side by side</strong> but allow <strong>width and height</strong> 
+adjustments.</p>
+<!-- NONE -->
+<h3>display: none</h3>
+<div class="none box">
+<p>This text is hidden using display:none;</p>
+</div>
+<p> The hidden text does <strong>not take up any space</strong> on the page.</p>
+</body>
+</body>
+</html>

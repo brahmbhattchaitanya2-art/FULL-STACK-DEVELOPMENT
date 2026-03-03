@@ -1,0 +1,30 @@
+<!-- Example: position and color change
+The following example will change both the background-color and the position of the <div> element 
+when the animation is 25% completed, 50% completed, 75% completed and again when the animation 
+is 100% completed: -->
+<html>
+<head>
+<style>
+div {
+width: 100px; 
+height: 100px; 
+background-color: pink; 
+position: relative;
+animation-name: example;
+animation-duration: 10s;
+animation-delay: 2s;
+animation-iteration-count: infinite;
+}
+@keyframes example {
+0% {background-color:red; left:0px; top:0px;}
+25% {background-color:yellow; left:200px; top:0px;}
+50% {background-color:blue; left:200px; top:200px;}
+75% {background-color:green; left:0px; top:200px;}
+100% {background-color:red; left:0px; top:0px;}
+}
+</style>
+</head>
+<body>
+<div></div>
+</body>
+</html>

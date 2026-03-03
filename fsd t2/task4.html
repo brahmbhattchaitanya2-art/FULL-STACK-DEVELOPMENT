@@ -1,0 +1,49 @@
+<!-- a button that change it colour when hover over and when click 
+a text input field change it background-color when it is focus
+a checkbox that change the color of its label and make a label bold when checked
+->an undoered list where the second list item is style differentely
+ with red text color and bold font one of the item 
+HAS class name special and all other list item have yellow bg and italic font style -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style> button{background-color: blue;}
+            button:hover{background-color: green;color: white;}
+            button:active{background-color: orange;}
+            input:focus{background-color: green;border: 2px solid orange  ;}
+            input:checked+label{
+                color: green;
+                font-weight: bold;}
+                ul li:nth-child(2){
+                    color: red;
+                    font-weight: bold;
+                }
+            
+                ul li:not(.special){font-style: italic ;
+                    background-color: yellow;}
+
+
+
+
+    </style>
+</head>
+<body>
+    <button> Click Me</button>
+    <label for=""> Name</label>
+    <input type="text" id="name">
+    <p><input type="checkbox" id ="agree">
+    <label for="agree">Agree</label>
+    
+    </p>
+    <ul>
+<li>1st</li>
+<li>2nd</li>
+<li class="special">3rd</li>
+<li>4th</li>
+
+
+    </ul>
+</body>
+</html>

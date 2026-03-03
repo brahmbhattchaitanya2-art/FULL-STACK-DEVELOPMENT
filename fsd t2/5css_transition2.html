@@ -1,0 +1,49 @@
+<!-- i)ease:start slow ,speedup then slow down
+ii)easein:st slow then speed up
+iii)easeout: st fast then slow down
+iv) ease-in-out:start and slow -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+.container{display: flex;
+gap: 15px;
+margin-top: 30px;
+}
+.box{height: 80px;
+width: 80px;
+background-color: red;
+border-radius: 5px;
+transition: width 2s;
+text-align: center;
+color: white;
+}
+.box:hover{width: 200px;}
+.linear{transition-timing-function: linear;}
+.ease{transition-timing-function: ease;}
+.easein{transition-timing-function: ease-in;}
+.easeout{transition-timing-function: ease-out;}
+.easeinout{transition-timing-function: ease-in-out;}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="box linear">Linear</div>
+    <div class="box ease"> Ease</div>
+    <div class="box easein">Ease In</div>
+    <div class="box easeout">Ease Out</div>
+    <div class="box easeinout">Ease In Out</div>
+</div>
+</body>
+</html>
+
+
+
+

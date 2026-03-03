@@ -1,0 +1,31 @@
+Evenly spaced/not evenly spaced
+<html>
+<head>
+<style>
+#grad1 {
+height: 100px;
+width:100px;
+background-image: linear-gradient(red, yellow, green);
+}
+#grad2 {
+height: 100px;
+width:100px;
+background-image: linear-gradient(red, orange, yellow, green, blue, indigo, violet);
+}
+#grad3 {
+height: 100px;
+width:100px;
+background-image: linear-gradient(pink 20%, lightgreen 30%, lightblue 50%);
+}
+</style>
+</head>
+<body>
+<h2>3 Color Stops (evenly spaced):</h2>
+<div id="grad1"></div>
+<h2>7 Color Stops (evenly spaced):</h2>
+<div id="grad2"></div>
+<h2>3 Color Stops using percentage (not evenly spaced):</h2>
+<div id="grad3"></div>
+<p><strong>Note:</strong> Color stops are spaced evenly when no percent is specified.</p>
+</body>
+</html>

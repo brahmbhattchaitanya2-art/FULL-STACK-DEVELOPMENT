@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+@keyframes example
+{
+0%{background-color: red;left: 0px;top: 0px;}
+25%{background-color: yellow;left:200px ;top: 0px;border-radius: 25%;}
+50%{background-color: blue;left:200px ;top: 200px;border-radius: 50%;}
+75%{background-color: green;left:0px ;top: 200px;transform: scale(1.5,1.5);}
+100%{background-color: red;left:0px ;top: 0px;}
+}
+div{
+    background-color: pink;
+    width: 100px;
+    height: 100px;
+    position:relative ;
+    animation-name: example;
+    animation-duration: 10s;
+ 
+    animation-delay: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count:2 ;
+    margin-top: 200px;
+    margin-left: 500px;
+    
+
+}
+
+
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

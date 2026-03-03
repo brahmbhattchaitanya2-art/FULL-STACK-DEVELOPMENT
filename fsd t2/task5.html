@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+      .hover:hover { background-color: yellow; }
+      .hover1:hover { background-color: pink; }
+      .button:hover { color: blue; } /* changes text color, not bg */
+      #sports:focus { color: red; }
+      .gender {
+        accent-color:red;
+         
+      }
+   </style>
+</head>
+<body>
+   <form action="submit.html" method="get">
+      <label for="name">Username</label> 
+      <input type="text" name="name" id="name" class="hover"><br><br>
+
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password" class="hover1"><br><br>
+
+      <label for="sports">Choice of sports</label>
+      <select name="sports" id="sports">
+         <option>Cricket</option>
+         <option>Hockey</option>
+         <option>Badminton</option>
+         <option>Tennis</option>
+      </select><br><br>
+
+      <label>Gender:</label>
+      <input type="radio" name="gender" value="male" class="gender" checked>Male
+      <input type="radio" name="gender" value="female" class="gender">Female
+      <br><br>
+
+      <input type="submit" class="button" value="Submit Form">
+      <input type="reset" class="button" value="Reset Form">
+   </form>
+</body>
+</html>

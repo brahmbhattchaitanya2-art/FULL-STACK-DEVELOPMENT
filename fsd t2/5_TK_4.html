@@ -1,0 +1,66 @@
+<!-- Create an interactive HTML form that demonstrates the use of CSS transitions to enhance user 
+experience.
+When the user interacts with the form elements:
+• The input field should smoothly change its background color, text color, and border style when 
+hovered.
+• The button should smoothly change its background color, text color, padding, and border 
+thickness when hovered.
+• The transitions should be visually appealing and use easing for smooth motion. -->
+
+<head>
+    <style>
+        form {
+            display: block;
+            margin: 30px auto;
+            width: 400px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px black;
+            text-align: center;
+        }
+
+        /* Input field styling */
+        .i1 {
+            height: 40px;
+            border: 2px solid gray;
+            padding: 10px;
+            transition: all 0.5s ease;
+        }
+
+        /* Input hover effect */
+        .i1:hover {
+            height: 40px;
+            background-color: aqua;
+
+            color: blue;
+            border: 5px dotted blue;
+        }
+
+        /* Button styling */
+        .b1 {
+            background-color: black;
+            color: white;
+            font-size: 18px;
+            padding: 20px;
+            border: 3px solid red;
+            border-radius: 10px;
+            margin: 15px;
+            transition: all 0.4s ease;
+        }
+
+        /* Button hover effect */
+        .b1:hover {
+            background-color: white;
+            color: black;
+            padding: 25px;
+            border: 5px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <input type="text" class="i1" placeholder="Enter Name" /><br><br>
+        <input type="submit" class="b1" value="Click Me" />
+    </form>
+</body>

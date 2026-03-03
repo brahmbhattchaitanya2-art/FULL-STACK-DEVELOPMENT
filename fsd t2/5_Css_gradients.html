@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .display{display:flex;}
+        .box{height: 300px;
+            width: 300px;
+            background: linear-gradient(purple,yellow);
+        }
+        .box1{height: 300px;
+            width: 300px;
+            /* background: linear-gradient(to top ,purple,yellow); */
+            background: linear-gradient(0deg,purple,yellow);
+        }
+        .box2{height: 300px;
+            width: 300px;
+            /* background: linear-gradient(to left,purple,yellow); */
+            background: linear-gradient(270deg,purple,yellow);
+        }
+        .box3{height: 300px;
+            width: 300px;
+            /* background: linear-gradient(to right,purple,yellow); */
+            background: linear-gradient(90deg,purple,yellow);
+        }
+        .box4{height: 300px;
+            width: 300px;
+            /* background: linear-gradient(to left,purple,yellow); */
+            /* background: linear-gradient(to bottom,purple,yellow); */
+            background: linear-gradient(180deg,purple,yellow);
+
+        }
+        .box5{height: 300px;
+            width: 300px;
+            background: linear-gradient(to top ,purple,yellow);
+        }
+    </style>
+</head>
+<body class="display">
+    <div class="display">
+    <div class="box display">Normal</div>&nbsp;
+    <div class="box1">to top right</div>&nbsp;
+    <div class="box2">to top left</div>&nbsp;
+    <div class="box3">to right</div>&nbsp;
+    <div class="box4">to left</div>&nbsp;
+    <div class="box5">to top</div>
+</div>
+</body>
+</html>

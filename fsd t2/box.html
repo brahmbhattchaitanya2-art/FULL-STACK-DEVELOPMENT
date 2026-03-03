@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+    .box1{width: 300px;
+    height: 150px;
+    margin: 30px auto;
+    padding: 20px; 
+    border: 4px solid black ;
+    box-sizing: content-box;
+    box-shadow: 5px 5px 15px gray;
+    background-color:yellow ;
+    text-align: center;}
+/* content box consider all padding and margin also include */
+.box2{width: 300px;
+    height: 150px; 
+    margin: 30px auto;
+    padding: 20px; 
+    border: 4px solid black ;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 15px gray;
+    background-color:yellow ;
+    text-align: center;}
+
+/* border-box box consider all padding and margin also NOT include MINUS ALL VALUE */
+
+
+   </style>
+
+</head>
+<body>
+    <h2><div class="box1">ABC</div>
+        <h2><div class="box2">XYZ</div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <STYle>
+.grid-fr{
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr 1fr; 
+    /* abc fixed 200  */
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+    background-color: lightgray;
+
+}
+.item{background-color:yellow;
+color: black;text-align: center; 
+border-radius: 5px;}
+.special
+{
+ grid-column:2/4; 
+grid-row: 2/4;
+background-color:red ;
+}
+
+    </STYle>
+</head>
+<body>
+ <div class="grid-fr">
+<div class="item">abc</div>
+<div class="item">def</div>
+<div class="item">xyz</div>
+<div class="item">sfr</div>
+<div class="item special">sfr</div>
+<div class="item">sfr</div>
+<div class="item">sfr</div>
+<div class="item">sfr</div>
+ </div>
+
+ 
+</body>
+</html>

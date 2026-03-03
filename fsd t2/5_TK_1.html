@@ -1,0 +1,25 @@
+<!-- write down html css that add some text to an image
+ int bottom left corner and top rigth corner also use opacity property
+ make image trransprent -->
+ 
+   
+    
+ <html> 
+    <head> 
+        <style>  
+.container { position: relative; border: 2px solid;}  
+.bottomleft { position: absolute; bottom: 8px; left: 15px; font-size: 30px; }  
+.topright { position: absolute; top: 8px; right: 15px; font-size: 30px; } 
+img{ 
+    width:100%; height:500px;opacity:0.3; 
+} 
+ </style> 
+ </head> 
+ <body>  
+    <h2>Transparent image and position property example</h2>  
+    <div class="container">  
+        <img src="1.jpeg" alt="Hello">  
+        <div class="bottomleft">Bottom Left</div>  
+        <div class="topright">Top Right</div>  
+    </div>  
+</body> </html>

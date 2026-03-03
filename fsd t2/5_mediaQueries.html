@@ -1,0 +1,28 @@
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+background-color: lightgreen;
+}
+/* Apply styles when NOT in landscape orientation */
+@media not (orientation: landscape) {
+body {
+
+background-color: lightblue;
+}
+}
+</style>
+</head>
+<body>
+<p>
+Resize the browser window. 
+When the width of this document is larger than the height (landscape), 
+the background color is <b>lightgreen</b>. 
+Otherwise (portrait), it is <b>lightblue</b>.
+</p>
+<b>
+Here, the not keyword inverts the media query condition 
+if the orientation is <u>not landscape</u>, the background becomes lightblue; 
+else, it remains lightgreen.
+</b>
+</body>

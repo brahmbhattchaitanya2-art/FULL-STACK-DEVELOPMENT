@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Images</title>
+  <style>
+    /* Default: show 1.jpeg, hide 2.jpeg */
+    .i1 {
+      display: block;
+    }
+    .i2 {
+      display: none;
+    }
+
+    
+    @media (max-width: 650px) {
+      .i1 {
+        display: none;
+      }
+      .i2 {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <img src="1.jpeg" alt="Large screen image" width="200" class="i1">
+  <img src="2.jpeg" alt="Small screen image" width="200" class="i2">
+</body>
+</html>

@@ -1,0 +1,48 @@
+<head>
+<style>
+/* ===== FIRST LINE & FIRST LETTER ===== */
+p::first-line {
+color: red;
+font-weight: bold;
+}
+p::first-letter {
+font-size: 50px;
+color: blue;
+text-decoration: underline;
+}
+/* ===== BEFORE & AFTER ===== */
+p::before {
+content: " Note: ";
+color: green;
+}
+p::after {
+content: "😊";
+}
+/* ===== MARKER ===== */
+ul li::marker {
+color: purple;
+font-size: 40px;
+}
+/* ===== SELECTION ===== */
+pre::selection {
+background-color: yellow;
+color: red;
+}
+</style></head>
+<body>
+<h2>CSS Pseudo-elements Example</h2>
+<p>
+This is a paragraph demonstrating CSS pseudo-elements. The first letter and first line are styled differently, 
+and extra content is added before and after the text.
+</p>
+<pre>
+This is a paragraph demonstrating CSS pseudo-elements. The first letter and first line are styled differently, 
+and extra content is added before and after the text.
+</pre>
+<ul>
+<li>HTML</li>
+<li>CSS</li>
+<li>JavaScript</li>
+</ul>
+</body>
+</html>

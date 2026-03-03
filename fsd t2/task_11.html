@@ -1,0 +1,30 @@
+<!-- write html css file to design 1 advertisment using p tag the text of advertisment should move contiusely from left-end to right-end than return back right to left-end advertisment should begin after 1 sec if loading page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ad{display: inline-block;
+            font-size: 22px;
+            animation: move;
+       
+            animation-timing-function:ease-in-out;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            background-color: aqua;
+            animation-timing-function: ease-in-out;
+
+        }
+        @keyframes move{
+            0%{transform: translatex(0);}
+            100%{transform: translatex(2000px);}
+        }
+    </style>
+</head>
+<body>
+    <p class="ad">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe dolorem tenetur aut, aspernatur ratione cumque reiciendis harum. Dolore, iste facere eius ullam blanditiis aliquam distinctio explicabo, illo alias repudiandae cumque ipsum fuga magni deleniti ipsam, quod et recusandae! Eius, corrupti nesciunt! Eum perspiciatis facere provident minima quis nobis nihil ducimus?
+    </p>
+</body>
+</html>

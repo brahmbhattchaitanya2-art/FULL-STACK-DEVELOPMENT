@@ -1,0 +1,31 @@
+<!-- Example: Animation in reverse direction with infinite iteration count -->
+<html>
+<head>
+<style>
+div {
+width: 100px;
+height: 100px;
+background-color: red; 
+position: relative; 
+animation-name: example; 
+
+
+animation-duration: 4s;
+animation-direction: alternate;
+border-radius: 50%;
+animation-iteration-count: infinite;
+}
+@keyframes example {
+0% {background-color:red; top:0px;}
+
+50% {background-color:green;top:200px;}
+100%{background-color: aqua;top:0px;}
+
+}
+</style>
+</head>
+<body>
+<p></p>
+<div></div>
+</body>
+</html>
