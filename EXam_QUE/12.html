@@ -1,0 +1,55 @@
+<!-- Design a registration form with username and password and email fields using HTML and 
+JavaScript. Perform following validations. 
+(i) Username field: minimum length 5 and maximum length 10 characters, it should not start 
+with special characters 
+(ii) Password field: it must contain at least one digit and at least one special character 
+(iii) Email field: it must follow proper email syntax (for ex., xyz.pqr@mnp.co.in) -->
+
+
+
+
+<form onsubmit="return validateRegister()">
+    Username:
+    <input type="text" id="regUser"><br><br>
+
+    Password:
+    <input type="password" id="regPass"><br><br>
+
+    Email:
+    <input type="text" id="email"><br><br>
+
+    <input type="submit" value="Register">
+</form>
+
+<script>
+function validateRegister() {
+
+    var u = document.getElementById("regUser").value;
+    var p = document.getElementById("regPass").value;
+    var e = document.getElementById("email").value;
+
+    // Username
+    var userPattern = /^[A-Za-z]\w{4,9}$/;
+    if (!userPattern.test(u)) {
+        alert("Invalid Username");
+        return false;
+    }
+
+    // Password
+    var passPattern = /^(?=.*[0-9])(?=.*\W).+$/;
+    if (!passPattern.test(p)) {
+        alert("Invalid Password");
+        return false;
+    }
+
+    // Email
+    var emailPattern =/^[\w.]+@\w+(\.\w{2,3})+$/;
+    if (!emailPattern.test(e)) {
+        alert("Invalid Email");
+        return false;
+    }
+
+    alert("Registration Successful");
+    return true;
+}
+</script>

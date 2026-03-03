@@ -1,0 +1,53 @@
+<!-- Design a login form using HTML & JavaScript with following validations on username and 
+password fields. 
+1. Password length must be 6 to 12 characters 
+2. Username should not start with _, @ or number. 
+3. Both should not be blank. -->
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Username & Password Validation</title>
+    <script>
+        function fun() {
+            // Username should NOT start with _, @, or number
+            var userPattern = /^[^_@0-9]/;
+            // Password length: 6 to 12 characters
+            var passPattern = /^\w{6,12}$/;
+            var uname = document.getElementById("t1").value;
+            var pass = document.getElementById("p1").value;
+            var msg = document.getElementById("test");
+            msg.style.color = "red";
+            // Check blank
+            if (uname.length === 0 || pass.length === 0) {
+                msg.innerHTML = "Username and Password must not be blank";
+            }
+            // Validate username
+            else if (!userPattern.test(uname)) {
+                msg.innerHTML = "Username should not start with _, @, or a number";
+            }
+            // Validate password
+            else if (!passPattern.test(pass)) {
+                msg.innerHTML = "Password length must be between 6 and 12 characters";
+            }
+            else {
+                msg.style.color = "green";
+                msg.innerHTML = "Welcome " + uname;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    NAME :
+    <input type="text" id="t1"><br><br>
+    PASS :
+    <input type="password" id="p1"><br><br>
+    <input type="button" value="Submit" onclick="fun()">
+    <h3 id="test"></h3>
+</body>
+
+</html>

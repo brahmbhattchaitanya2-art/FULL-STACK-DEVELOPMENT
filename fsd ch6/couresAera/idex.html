@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chaitanya Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body id="home">
+
+  <!-- Top Header -->
+  <header class="topbar">
+    <!-- Task 1: Styled Name (top-left) -->
+    <div class="brand">CHAITANYA BRAHMBHATT</div>
+
+    <!-- Task 2: Nav bar with 4 options + hover underline/bold -->
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#projects">Project details</a>
+      <a href="#skills">Skills</a>
+      <a href="#recommendations">Recommendations</a>
+    </nav>
+  </header>
+
+  <!-- Task 8: Home icon -->
+  <a class="home-icon" href="#home" title="Home">🏠</a>
+
+  <!-- Task 3: About Me -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+
+    <div class="about-wrap">
+      <!-- Put your photo in same folder with name: profile.jpg -->
+      <img class="profile-img" src="profile.jpg" alt="Profile photo" />
+
+      <div class="about-text">
+        <h3 class="name">CHAITANYA BRAHMBHATT</h3>
+        <p>
+          I am a motivated learner with a strong interest in web development and programming.
+          I enjoy building clean, user-friendly web pages using HTML, CSS, and JavaScript.
+          I am continuously improving my technical skills by working on real projects and learning new technologies.
+          My goal is to become a confident developer capable of creating practical and efficient web solutions.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Task 5: Projects (3 unique) -->
+  <section id="projects" class="section">
+    <h2>Project details</h2>
+
+    <div class="card">
+      <h3>1) Personal Portfolio Website</h3>
+      <p>A responsive website built using HTML, CSS, and JavaScript to showcase skills, projects, and recommendations.</p>
+    </div>
+
+    <div class="card">
+      <h3>2) Student Result Management System</h3>
+      <p>A simple program that stores student marks, calculates total/average, and displays results using basic logic.</p>
+    </div>
+
+    <div class="card">
+      <h3>3) Daily Task Planner</h3>
+      <p>A lightweight task planner where users can add, view, and manage daily tasks in a clean interface.</p>
+    </div>
+  </section>
+
+  <!-- Task 4: Skills (5 total with logo + text) -->
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+
+    <div class="skills-grid">
+      <div class="skill">
+        <img src="icons/html.jpeg" alt="HTML" />
+        <span>HTML</span>
+      </div>
+
+      <div class="skill">
+        <img src="icons/css.avif" alt="CSS" />
+        <span>CSS</span>
+      </div>
+
+      <div class="skill">
+        <img src="icons/js.png" alt="JavaScript" />
+        <span>JavaScript</span>
+      </div>
+
+      <div class="skill">
+        <img src="icons/python.png" alt="Python" />
+        <span>Python</span>
+      </div>
+
+      <div class="skill">
+        <img src="icons/github.jpg" alt="GitHub" />
+        <span>Git & GitHub</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Task 6 + 7 + 9: Recommendations + Add new + popup -->
+  <section id="recommendations" class="section">
+    <h2>Recommendations</h2>
+
+    <div id="recList" class="recs">
+      <div class="rec">“Chaitanya demonstrates strong dedication toward learning web development and consistently applies concepts in practical projects.”</div>
+      <div class="rec">“His portfolio layout is clean and well-structured, making navigation simple and user-friendly.”</div>
+      <div class="rec">“The recommendation feature and interactive elements show good understanding of JavaScript and DOM manipulation.”</div>
+    </div>
+
+    <div class="rec-form">
+      <h3>Add a Recommendation</h3>
+      <input id="recName" type="text" placeholder="Your name (optional)" />
+      <textarea id="recText" rows="4" placeholder="Write your recommendation..."></textarea>
+      <button id="addRecBtn">Submit</button>
+    </div>
+  </section>
+
+  <!-- Popup Modal (looks better than alert) -->
+  <div id="popup" class="popup">
+    <div class="popup-box">
+      <h3>✅ Submitted</h3>
+      <p>Thank you for leaving a recommendation!</p>
+      <button id="closePopup">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

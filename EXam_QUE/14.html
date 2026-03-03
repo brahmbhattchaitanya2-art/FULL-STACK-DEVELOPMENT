@@ -1,0 +1,34 @@
+<!-- Example-14 
+Create a small HTML page where: 
+You store three fields in localStorage: 
+product = Laptop 
+price = 50000 
+discount = 10 
+Retrieve and display the stored product in the console. 
+Remove the discount field from localStorage, then print the updated data in the console. -->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+ <title>localStorage Example</title>
+</head>
+<body>
+<script>
+ // 1. Store data in localStorage
+ localStorage.setItem("product", "Laptop");
+ localStorage.setItem("price", 50000);
+ localStorage.setItem("discount", 10);
+ // 2. Retrieve and display product
+ console.log("Product:", localStorage.getItem("product"));
+ // 3. Remove discount field
+ localStorage.removeItem("discount");
+ // 4. Print updated data
+ console.log("Updated localStorage data:");
+ console.log("Product:", localStorage.getItem("product"));
+ console.log("Price:", localStorage.getItem("price"));
+ console.log("Discount:", localStorage.getItem("discount")); // null
+</script>
+</body> 
+</html>

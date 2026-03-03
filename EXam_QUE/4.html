@@ -1,0 +1,36 @@
+<!-- Given the following HTML snippet: 
+<h1 id="main-title">Hello DOM!</h1> 
+Write a JavaScript function that performs the following tasks: 
+1. Selects the h1 element 
+2. Changes its text content to DOM Manipulation is Fun! using innerText. 
+3. Changes its text color to green using the style property. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+
+    <h1 id="main-title">Hello DOM!</h1>
+
+    <script>
+        function changeTitle() {
+            let title = document.getElementById("main-title");
+            title.innerText = "DOM Manipulation is Fun!";
+            title.style.color = "green";
+        }
+        changeTitle();
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

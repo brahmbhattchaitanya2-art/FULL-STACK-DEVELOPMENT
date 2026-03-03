@@ -1,0 +1,76 @@
+<!-- Create a function registerUser() that uses pop-up boxes to gather and validate user input for 
+a new user registration. 
+The function should: 
+1. Use a while loop to repeatedly prompt the user for a username using the prompt() popup box. The loop should continue to run as long as the user's input is an empty string, 
+null, or undefined. 
+2. Once a valid username is provided, use another while loop to prompt the user for a 
+password. This loop should continue until the user provides a password that is at least 8 
+characters long. 
+3. After a valid password is entered, use the confirm() pop-up box to ask the user, 
+Are you sure you want to register with this username and password? 
+4. If the user clicks Cancel on the confirmation box, use alert() to display a message 
+Registration canceled. 
+and end the function. 
+5. If the user clicks OK, use a template literal to display a final alert() message confirming 
+the successful registration, showing both the username and the password. -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function registerUser() {
+            let username = "";
+
+            // Ask for username until valid
+            while (!username) {
+                username = prompt("Enter username:");
+            }
+
+            let password = "";
+
+            // Ask for password until 8 characters
+            while (!password || password.length < 8) {
+                password = prompt("Enter password (minimum 8 characters):");
+            }
+
+            // Confirmation
+            let confirmRegister = confirm(
+                "Are you sure you want to register with this username and password?"
+            );
+
+            if (!confirmRegister) {
+                alert("Registration canceled.");
+                // return;
+            }
+
+            // // Success message
+            // alert(`Registration successful!\nUsername: ${username}\nPassword: ${password}`);
+
+            else {
+                alert("Registration successful! \nUsername:" + username + "\nPassword:" + password);
+            }
+
+
+
+
+        }
+    </script>
+
+    <button onclick="registerUser()">Register</button>
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>

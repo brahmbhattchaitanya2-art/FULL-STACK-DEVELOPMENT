@@ -1,0 +1,40 @@
+<!-- When the form is submitted, prevent the default form submission and display an alert with the message
+“Login successful”.
+When the user changes the value of a field and then leaves it, the background color of that field should change to blue.
+When the user clicks (focuses) on the User ID field, its background color should change to light green.
+While the user types in any input field, the input text color should change to orange.
+Implement all the above functionalities using only inline HTML event attributes.
+Do not use addEventListener or any external JavaScript file. -->
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form</title>
+</head>
+<body>
+
+<form onsubmit="event.preventDefault(); alert('Login successful');">
+
+    User ID:<br>
+    <input type="text"
+           onfocus="this.style.background='lightgreen'"
+           onchange="this.style.background='blue'"
+           oninput="this.style.color='orange'">
+    <br><br>
+
+    Password:<br>
+    <input type="password"
+           onchange="this.style.background='blue'"
+           oninput="this.style.color='orange'">
+    <br><br>
+
+    <button type="submit">Login</button>
+
+</form>
+
+</body>
+</html>

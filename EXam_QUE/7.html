@@ -1,0 +1,66 @@
+<!-- Example-7 
+Create a form with two fields (username and email) and a submit button. Implement the 
+following: 
+1. While typing in a field, the text should appear in red (oninput). 
+2. When the user leaves a field after making changes, its background should change to 
+yellow (onchange). 
+3. When the user hovers (onmouseover) over the form, the border should turn green. 
+4. When the mouse leaves the form (onmouseout), the border should return to black. 
+5. Add a separate button that toggles the form’s background color between white and 
+lightblue (onclick). 
+6. When the form is submitted, prevent default submission and display an alert saying 
+Form submitted successfully! (onsubmit). -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+
+    <form id="myForm"
+     onmouseover="this.style.border='2px solid green'" 
+     onmouseout="this.style.border='2px solid black'"
+    onsubmit="event.preventDefault ; alert('Form submitted successfully!');"
+     style="border:2px solid black; padding:10px; width:250px;">
+
+        Username:<br>
+        <input type="text" onchange="this.style.background='yellow'" oninput="this.style.color='red'"><br><br>
+
+        Email:<br>
+        <input type="email" onchange="this.style.background='yellow'" oninput="this.style.color='red'"><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <br>
+
+    <button onclick="toggleColor()">Toggle Background</button>
+
+    <script>
+        let flag = true;
+
+        function toggleColor() {
+            let form = document.getElementById("myForm");
+            form.style.background = flag ? "lightblue" : "white";
+            flag = !flag;
+        }
+
+       
+    </script>
+
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function overHead() {
+  document.getElementById("h").innerHTML = "WELCOME2025";
+  document.getElementById("h").style.color = "red";
+}
+
+function outHead() {
+  document.getElementById("h").innerHTML = "BYE2024";
+  document.getElementById("h").style.color = "black";
+}
+
+function mouseDown() {
+  document.body.style.backgroundColor = "black";
+}
+
+function mouseUp() {
+  document.body.style.backgroundColor = "cyan";
+}
+</script>
+</head>
+
+<body onmousedown="mouseDown()" onmouseup="mouseUp()">
+
+<h1 id="h" onmouseover="overHead()" onmouseout="outHead()">
+BYE2024
+</h1>
+
+</body>
+</html>

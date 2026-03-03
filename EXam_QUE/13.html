@@ -1,0 +1,35 @@
+<!-- Create a small HTML page where: 
+You store two fields in sessionStorage: 
+username = "lj" 
+email = "lj@example.com" 
+Retrieve and display the stored username in the console. 
+Remove only the email field from sessionStorage, then print the remaining data in the 
+console.  -->
+
+
+
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>SessionStorage Example</title> 
+</head> 
+<body> 
+ 
+<script> 
+    // Store data in sessionStorage 
+    sessionStorage.setItem("username", "lj"); 
+    sessionStorage.setItem("email", "lj@example.com"); 
+ 
+    // Retrieve and display username 
+    console.log("Username:", sessionStorage.getItem("username")); 
+ 
+    // Remove only the email field 
+    sessionStorage.removeItem("email"); 
+ 
+    // Print remaining data 
+    console.log("Remaining sessionStorage data:"); 
+    console.log("Username:", sessionStorage.getItem("username")); 
+    console.log("Email:", sessionStorage.getItem("email")); // null 
+</script> 
+ 
+</body>

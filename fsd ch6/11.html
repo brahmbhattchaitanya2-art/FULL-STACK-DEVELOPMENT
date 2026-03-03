@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap 5 Combined Design</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-light">
+
+  <div class="container py-5">
+
+    <!-- TYPOGRAPHY + TEXT UTILITIES -->
+    <h1 class="display-4 text-center text-primary mb-4">Institute Information Portal</h1>
+    <h3 class="text-uppercase text-center text-secondary">welcome students</h3>
+
+    <p class="lead text-start mt-3">
+      This is your official students portal. Please read all updates carefully.
+      <span class="fw-bold text-danger">Important: Submit your documents before deadline.</span>
+    </p>
+    <p class="text-muted fst-italic">Updated today by Admin Office</p>
+
+    <hr>
+
+    <!-- ALERTS -->
+    <div class="alert alert-success">You have logged in successfully!</div>
+
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      Attendance update pending. Complete it soon!
+      <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+
+    <div class="alert alert-danger fade show">Your form has errors. Please correct them.</div>
+
+    <hr>
+
+    <!-- COLLAPSE -->
+    <h4 class="text-primary">About Our Institute</h4>
+    <button class="btn btn-info text-white my-2" data-bs-toggle="collapse" data-bs-target="#about">
+      Show Details
+    </button>
+
+    <div id="about" class="collapse bg-white border p-3">
+      Our institute provides high-quality education along with modern facilities, labs, and expert faculty.
+    </div>
+
+    <hr>
+
+    <!-- ACCORDION -->
+    <h4 class="text-primary mb-3">Frequently Asked Questions</h4>
+
+    <div class="accordion" id="faqAccordion">
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button text-primary" data-bs-toggle="collapse" data-bs-target="#q1">
+            What are the office timings?
+          </button>
+        </h2>
+        <div id="q1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+          <div class="accordion-body text-secondary">
+            Office opens from 9:00 AM to 5:00 PM.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item mt-2">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed text-primary" data-bs-toggle="collapse" data-bs-target="#q2">
+            How to apply for a course?
+          </button>
+        </h2>
+        <div id="q2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body text-secondary">
+            You can apply online through the student portal.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item mt-2">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed text-primary" data-bs-toggle="collapse" data-bs-target="#q3">
+            What documents are required?
+          </button>
+        </h2>
+        <div id="q3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body text-secondary">
+            Marksheet, ID proof, passport-size photos.
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <hr>
+
+    <!-- CARDS -->
+    <h4 class="text-primary mb-3">Our Popular Courses</h4>
+
+    <div class="row g-3">
+
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <img src="courses.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Web Development</h5>
+            <p class="card-text">Learn HTML, CSS, JavaScript & frameworks.</p>
+            <button class="btn btn-primary">Enroll Now</button>
+          </div>
+          <div class="card-footer text-muted">6 Months</div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <img src="courses.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Graphic Design</h5>
+            <p class="card-text">Master Photoshop, Illustrator & UI design.</p>
+            <button class="btn btn-primary">Enroll Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <img src="courses.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Data Science</h5>
+            <p class="card-text">Python, ML, AI & Data Visualization.</p>
+            <button class="btn btn-primary">Enroll Now</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <hr>
+
+    <!-- GRID + FLEX -->
+    <h4 class="text-primary mb-3">Our Services</h4>
+
+    <div class="row text-center g-3">
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="bg-info p-4 text-white">Library</div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="bg-info p-4 text-white">Labs</div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="bg-info p-4 text-white">Workshops</div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="bg-info p-4 text-white">Hostel</div>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- FLEXBOX FOOTER -->
+    <footer class="d-flex justify-content-between align-items-center bg-dark text-white p-4 mt-4 rounded">
+      <div>© 2025 Institute</div>
+      <div class="d-flex gap-3">
+        <a href="#" class="text-white text-decoration-none">Home</a>
+        <a href="#" class="text-white text-decoration-none">Courses</a>
+        <a href="#" class="text-white text-decoration-none">Contact</a>
+      </div>
+      <div>Follow Us</div>
+    </footer>
+
+  </div>
+
+
+
+</body>
+
+</html>

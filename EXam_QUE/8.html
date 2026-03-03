@@ -1,0 +1,41 @@
+<!-- Example-8 
+Write a JavaScript program that displays an alert message “welcome user” when the page loads. 
+Then, display a confirmation box asking “Do you want to continue?”
+ If the user clicks OK, prompt the user to enter two numbers. 
+ Calculate the sum of the two numbers. 
+ Display the result in an alert box. 
+ If the user clicks Cancel, display an alert message “bye bye”. -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        alert("Welcome user");
+
+        let choice = confirm("Do you want to continue?");
+
+        if (choice) {
+            let a = Number(prompt("Enter first number"));
+            let b = Number(prompt("Enter second number"));
+            alert("Sum = " + (a + b));
+        } else {
+            alert("Bye bye");
+        }
+    </script>
+
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>

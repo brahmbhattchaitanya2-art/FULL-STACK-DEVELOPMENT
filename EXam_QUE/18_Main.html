@@ -1,0 +1,55 @@
+<!-- Given a list of prices in an array:
+const prices = [150, 80, 220, 95];
+And a list of HTML elements with a shared class:
+<p class="price-tag">150</p>
+<p class="price-tag">80</p>
+<p class="price-tag">220</p>
+<p class="price-tag">95</p>
+Write a JavaScript function that:
+1. Selects all elements with the class price-tag.
+2. Loops through the elements and checks their innerText.
+3. If the price is less than 100, change the text color to green.
+4. If the price is 100 or more, change the text color to red -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        const prices = [150, 80, 220, 95];
+
+        function checkPrices() {
+            let items = document.getElementsByClassName("price-tag");
+
+            for (let i = 0; i < items.length; i++) {
+                let price = Number(items[i].innerText);
+
+                if (price < 100) {
+                    items[i].style.color = "green";
+                } else {
+                    items[i].style.color = "red";
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <p class="price-tag">150</p>
+    <p class="price-tag">80</p>
+    <p class="price-tag">220</p>
+    <p class="price-tag">95</p>
+
+    <button onclick="checkPrices()">Check Prices</button>
+
+</body>
+</html>

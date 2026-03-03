@@ -1,0 +1,48 @@
+<!-- Example-5 
+Given the following HTML: 
+<p class="description">Item 1</p> 
+<p class="description">Item 2</p> 
+<p class="description">Item 3</p> 
+Write a JavaScript function that: 
+1. Selects all elements with the class description
+2. For each element, changes to Updated! inside strong tag. 
+3. Also, adds a title attribute to each element with the value 
+This item has been updated. -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+    <p class="description">Item 1</p>
+    <p class="description">Item 2</p>
+    <p class="description">Item 3</p>
+
+    <script>
+        function updateItems() {
+            let items = document.getElementsByClassName("description");
+
+            for (let i = 0; i < items.length; i++) {
+                items[i].innerHTML = "<strong>Updated!</strong>";
+                items[i].title = "This item has been updated.";
+            }
+        }
+        updateItems();
+    </script>
+
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>

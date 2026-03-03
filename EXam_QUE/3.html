@@ -1,0 +1,59 @@
+<!-- Example-3 
+Write a function gradeStudents that takes an array of student objects (each with a name and 
+FSD marks property). 
+The function should: 
+1. Iterate through the student array. 
+2. For each student, it should use the prompt() pop-up box to ask the user to enter FSD 
+marks. 
+The prompt message should clearly state the student's name (e.g., Enter FSD marks for 
+Alice:). 
+3. It should validate the user input. If the input is not a valid number (use isNaN()), display 
+an alert() message 
+Invalid grade. Please enter a number. 
+and continue to the next student without updating the current one. 
+4. If the input is valid, update the student's FSD marks property with the new value. 
+5. Finally, after the loop finishes, it should use alert() to display a summary of the FSD 
+marks for all students in a clear, multi-line format using template literals. -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function gradeStudents(students) {
+            let result = "";
+
+            for (let i = 0; i < students.length; i++) {
+                let marks = prompt("Enter FSD marks for " + students[i].name + ":");
+
+                if (isNaN(marks)) {
+                    alert("Invalid grade. Please enter a number.");
+                    continue;
+                }
+
+                students[i].FSD = marks;
+                result += students[i].name + " : " + students[i].FSD + "\n";
+            }
+
+            alert(`FSD Marks Summary:\n${result}`);
+        }
+        // Example call
+        gradeStudents([
+            { name: "Alice", FSD: 0 },
+            { name: "Bob", FSD: 0 },
+            { name: "Charlie", FSD: 0 }
+        ]);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

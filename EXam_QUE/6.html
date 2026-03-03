@@ -1,0 +1,47 @@
+<!-- Example-6 
+Create a form with two fields: username and email, along with a submit button. 
+1. When the form is submitted, prevent the default form submission and display an alert 
+box with the message 
+Form submitted. 
+2. When the user makes changes to any field and then leaves it (loses focus), the 
+background color of that field should change to yellow. 
+3. While user clicks on input field, change background color to pink (only for username 
+field). 
+4. While the user is typing in a field, the input text should appear in red color. 
+5. Implement this using only event attributes (oninput, onchange, onsubmit) in HTML, 
+without using addEventListener. -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Events</title>
+</head>
+
+<body>
+
+<form onsubmit="event.preventDefault(); alert('Form submitted.')">
+
+    Username:
+    <input type="text"
+           onfocus="this.style.background='pink'"
+           onblur="this.style.background='yellow'"
+           oninput="this.style.color='red'">
+
+    <br><br>
+
+    Email:
+    <input type="email"
+           onblur="this.style.background='yellow'"
+           oninput="this.style.color='red'">
+
+    <br><br>
+
+    <button type="submit">Submit</button>
+
+</form>
+
+</body>
+</html>

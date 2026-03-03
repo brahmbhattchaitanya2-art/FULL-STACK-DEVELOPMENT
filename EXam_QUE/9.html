@@ -1,0 +1,42 @@
+<!-- Example-9 
+Write a single function calculateDiscount that meets the following requirements: It takes a 
+basePrice as its first parameter. It accepts an optional discount percentage as a second 
+parameter, which should default to 10. It uses a Rest Parameter to accept any number of 
+additional prices to be included in the calculation. The function should return the sum of all 
+prices passed to it (including the basePrice and additional prices), after applying the discount to 
+the total. -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function calculateDiscount(basePrice, discount = 10, ...prices) {
+            let total = basePrice;
+
+            for (let i = 0; i < prices.length; i++) {
+                total += prices[i];
+            }
+
+            return total - (total * discount / 100);
+        }
+
+        // Example call
+        alert(calculateDiscount(100, 20, 50, 30));
+    </script>
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>
