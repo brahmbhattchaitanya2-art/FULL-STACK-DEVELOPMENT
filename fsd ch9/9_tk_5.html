@@ -1,0 +1,49 @@
+<!-- Given a list of 5 <p class='text'> and also 5 <div class='text'> elements, write code to:  
+(a) select all p tags 
+(b) append '(Updated)' to each element 
+(c) print the count of updated elements in console. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <p class="text">Paragraph 1</p>
+    <p class="text">Paragraph 2</p>
+    <p class="text">Paragraph 3</p>
+    <p class="text">Paragraph 4</p>
+    <p class="text">Paragraph 5</p>
+
+    <div class="text">Div 1</div>
+    <div class="text">Div 2</div>
+    <div class="text">Div 3</div>
+    <div class="text">Div 4</div>
+    <div class="text">Div 5</div>
+
+    <script>
+        // (a) select all p tags 
+        var paragraphs = document.querySelectorAll("p.text");
+
+        // (b) append '(Updated)' to each element 
+        for (var p of paragraphs) {
+            p.innerHTML = `${p.innerHTML} (Updated)`;
+        }
+
+        // (c) print count in console 
+        console.log(paragraphs.length); 
+    </script>
+
+
+</head>
+
+<body>
+
+
+
+</body>
+
+</html>

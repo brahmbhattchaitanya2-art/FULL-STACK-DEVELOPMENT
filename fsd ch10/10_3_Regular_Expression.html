@@ -1,0 +1,208 @@
+<!-- string must contain "abe " anywhere in whole using -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function fun() {
+            pat = /abc/i
+            u = document.getElementById("t1").value
+            if (pat.test(u)) {
+                alert("perfect")
+            }
+            else {
+                alert("not perfect")
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    <form action="" name="p1"></form>
+    <label for="">abc</label>
+    <input type="text" id="t1">
+    <input type="submit" onclick="fun()">
+</body>
+
+</html>
+
+
+<!-- must contain a or b or c any combination of 3 letter -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function fun() {
+            pat1 = /[abc]/
+            u = document.getElementById("t2").value;
+            if (pat1.test(u)) {
+                alert("perfect")
+            }
+            else {
+                alert("not perfect")
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    <form action="" name="p1"></form>
+    <label for="">[abc]</label>
+    <input type="text" id="t2">
+    <input type="submit" onclick="fun()">
+</body>
+
+</html>
+
+
+
+<!-- not any of the character a b and c string may contain aor bor c or any combination of 3 letter 
+ but
+ with other alphabets ,digit or the special character only  -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function fun() {
+            pat2 = /[^abc]/
+            u = document.getElementById("t3").value
+            if (pat2.test(u)) {
+                alert("perfect")
+            }
+            else {
+                alert("not perfect")
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    <form action="" name="p1"></form>
+    <label for="">[^abc]</label>
+    <input type="text" id="t3">
+    <input type="submit" onclick="fun()">
+</body>
+
+</html>
+
+<!-- 
+digit must be present in string [0-9] -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function fun() {
+            pat3 = /[0-9]/
+            u = document.getElementById("t4").value
+            if (pat3.test(u)) {
+                alert("perfect")
+            }
+            else {
+                alert("not perfect")
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    <form action="" name="p1"></form>
+    <label for="">[0-9]</label>
+    <input type="text" id="t4">
+    <input type="submit" onclick="fun()">
+</body>
+
+</html>
+
+
+
+
+
+<!-- only digit are not allow in string 
+string must conatain alphabet or special chars with string -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function fun() {
+            pat4 = /[^0-9]/
+            u = document.getElementById("t5").value
+            if (pat4.test(u)) {
+                alert("perfect")
+            }
+            else {
+                alert("not perfect")
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    <form action="" name="p1"></form>
+    <label for="">[^0-9]</label>
+    <input type="text" id="t5">
+    <input type="submit" onclick="fun()">
+</body>
+
+</html>
+
+<!-- /(x|y)/ -->
+
+
+
+<!-- string must contain b and ocurrance of o can be zero or more , pat =/Bo*/ -->
+<!-- string must end with t pat =/t$/ test right top no -->
+<!-- must contain only 10 digit pat=/^\d{10}$/ -->
+<!-- string must contain only letter and least one letter or more allow pat= /^[A-Z a-z]+$ -->
+<!-- cap in [] so it is negation -->
+
+
+<!-- string accepting an integer having 4 digit input should
+  not accept chars of letter and special symbols pat =/^\d{4}$/ -->
+
+
+
+

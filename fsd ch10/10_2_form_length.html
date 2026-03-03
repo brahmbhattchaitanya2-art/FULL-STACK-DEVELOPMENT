@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function fun() {
+            var obj = document.forms["f1"]
+            alert(obj.length)
+        }
+    </script>
+    <form action="" name="f1" onsubmit="fun()" onreset="fun()">
+        <input type="text">
+        <input type="password">
+        <input type="submit">
+        <input type="reset">
+
+
+
+        <!-- give the length of how many field given -->
+    </form>
+
+</body>
+
+</html>

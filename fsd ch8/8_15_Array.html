@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // push
+        let fruit = ["apple", "mango"]
+        fruit.push("kiwi")
+        console.log(fruit);
+
+
+        // pop
+
+        let numbers = [10, 20, 30]
+        let removed = numbers.pop()
+        console.log(numbers);
+        console.log(removed);
+
+
+        //map  it make new array
+
+        let nums = [1, 2, 3, 4]
+        let sqr = nums.map(function (num) { return num * num });
+        console.log(sqr);
+
+        // filter  it do not make new array it just filter it
+        let age = [12, 18, 25, 24]
+        let adults = age.filter(age => age >= 18)
+        console.log(adults);
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

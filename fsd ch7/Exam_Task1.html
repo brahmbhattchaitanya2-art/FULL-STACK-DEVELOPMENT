@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body class="bg-light">
+
+    <table class="table table-bordered border-danger w-25 mx-auto mt-5 text-center">
+        <tr>
+            <td colspan="3">
+                <div class="form-floating">
+                    <input type="text" id="display" class="form-control" placeholder="Enter">
+                    <label for="display">Enter</label>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <button class="btn btn-danger w-100" data-bs-toggle="modal" data-bs-target="#add">+</button>
+            </td>
+            <td>
+                <button class="btn btn-danger w-100" data-bs-toggle="modal" data-bs-target="#div">/</button>
+            </td>
+            <td>
+                <button class="btn btn-danger w-100" data-bs-toggle="modal" data-bs-target="#mul">*</button>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <button class="btn btn-danger w-100" data-bs-toggle="modal" data-bs-target="#sub">-</button>
+            </td>
+            <td>
+                <button class="btn btn-danger w-100" data-bs-toggle="modal" data-bs-target="#per">%</button>
+            </td>
+            <td>
+                <button class="btn btn-danger w-100" data-bs-toggle="modal" data-bs-target="#pow">X<sup>2</sup></button>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2">
+                <button class="btn btn-danger w-100" data-bs-toggle="modal" data-bs-target="#submit">SUBMIT</button>
+            </td>
+            <td>
+                <button class="btn btn-danger w-100" data-bs-toggle="modal" data-bs-target="#reset">R</button>
+            </td>
+        </tr>
+    </table>
+
+    <!-- MODALS -->
+    <div class="modal fade" id="add">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center">Addition Operator</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="div">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center">Division Operator</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="mul">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center">Multiply Operator</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="sub">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center">Subtraction Operator</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="per">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center">Percentage Operator</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="pow">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center">Power Operator</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="submit">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center">Submit Value</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="reset">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center">Reset Value</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+
+    function fetchData(){
+        return new Promise((resolve,reject)=>{
+            setTimeout (()=>{let success=true;
+                if(success)
+            {
+                resolve("Data Received")
+
+            }
+            else{
+                reject("error occured")
+            }
+            },2000);});
+        }
+    
+        async function getData(){
+            try{let result=await fetchData();
+                console.log(result)
+            }
+            catch(error){
+                console.log("Error",error);
+            }
+        }
+getData();
+
+
+</script>
+
+
+
+</head>
+<body>
+
+
+
+    
+</body>
+</html>

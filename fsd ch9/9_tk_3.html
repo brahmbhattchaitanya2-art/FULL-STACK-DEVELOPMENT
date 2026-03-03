@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Functions</title>
+
+    <script>
+        function fun(id) {
+            id.style.color = "yellow";
+        }
+
+        function fun2(id) {
+            id.style.color = "black";
+        }
+
+        function fun3() {
+            let d = new Date();
+            document.getElementById("demo").innerHTML = d;
+        }
+
+        function fun4() {
+            document.body.style.backgroundColor = "red";
+        }
+
+        function fun5() {
+            document.body.style.backgroundColor = "green";
+        }
+    </script>
+</head>
+
+<body id="bd">
+
+    <h2 onmouseover="fun(this)" onmouseout="fun2(this)">
+        Hover on me
+    </h2>
+    <!-- button call function &
+ p tg show store value & call id  -->
+    <button onclick="fun3()">Show Date</button>
+    <p id="demo"></p>
+
+    <button onclick="fun4()">Red Background</button>
+    <button onclick="fun5()">Green Background</button>
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!-- alert with popup txt enter something if input field is empty on clicking submit button  -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <script>
+        function fun()
+        {
+            val =document.getElementById("i1").value
+            if (val==="")
+        {
+            alert("Enter Something")
+        }
+        else{
+            alert(val)
+        }
+        }
+    </script>
+    <form action="">
+        <input type="text" id="i1">
+        <input type="submit" onclick="fun()">
+    </form>
+    
+ </body>
+ </html>

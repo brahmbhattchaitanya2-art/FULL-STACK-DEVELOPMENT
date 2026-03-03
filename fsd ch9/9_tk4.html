@@ -1,0 +1,37 @@
+<!-- 623
+write  jvavas handle follwing
+if mouse btn left press on browers it dispaly mssg left click
+if mouse btn right press on browers it dispaly mssg right click -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.onmousedown=function(e)
+        {
+            if (e.button==0)
+        {
+            alert("left clicked")
+        }
+        if (e.button==2)
+        {
+            alert("right clicked")
+        }
+
+        if (e.button==1)
+        {
+            alert("scroll clicked")
+        }
+    
+    
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>LocalStorage Form</title>
+</head>
+
+<body>
+
+    <h3>Product Details</h3>
+
+    <form onsubmit="return saveData()">
+        Product:
+        <input type="text" id="product" required><br><br>
+
+        Price:
+        <input type="number" id="price" required><br><br>
+
+        Discount:
+        <input type="number" id="discount" required><br><br>
+
+        <input type="submit" value="Save">
+    </form>
+
+    <br>
+
+    <button onclick="removeDiscount()">Remove Discount</button>
+
+    <script>
+        function saveData() {
+            // Store values in localStorage
+            localStorage.setItem("product", document.getElementById("product").value);
+            localStorage.setItem("price", document.getElementById("price").value);
+            localStorage.setItem("discount", document.getElementById("discount").value);
+
+            // Display message
+            alert("Data saved in local storage!");
+
+            return false; // prevent page refresh
+        }
+
+        function removeDiscount() {
+            // Remove only discount
+            localStorage.removeItem("discount");
+
+            // Display remaining data in console
+            console.log("Remaining localStorage data:");
+            console.log("Product:", localStorage.getItem("product"));
+            console.log("Price:", localStorage.getItem("price"));
+            console.log("Discount:", localStorage.getItem("discount")); // null
+        }
+    </script>
+
+</body>
+
+</html>

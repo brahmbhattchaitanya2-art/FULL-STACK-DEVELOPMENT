@@ -1,0 +1,32 @@
+<!-- write html and js script 
+ add 3 input field
+ in 1 text field convert txt into upper case when the value of the field is chnage using onchange event
+ 2 change bg col to yellow when the when filed get focus using onfocus event, chg the txt col to blue while typing using on input event
+ 3 convert the enter txt into lower case when field lost focus using on blur event -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+
+<body>
+
+   <label for="">onchange_Upper</label>
+   <input type="text" onchange="this.value=this.value.toUpperCase()">
+   <label for="">Bg&Txt_chg_color  </label>
+   <input type="text" onfocus="this.style.backgroundColor='yellow'" oninput="this.style.color='blue'">
+   <label for="">onblur_Lower</label>
+   <input type="text" onchange="this.value=this.value.toLowerCase()">
+
+
+</body>
+
+</html>

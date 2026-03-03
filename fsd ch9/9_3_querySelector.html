@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- select the 1 matching elements using css selector -->
+
+<body>
+    <p>Paragraph</p>
+    <p>Paragraph1</p>
+    <script>
+        // document.querySelector("p").style.color="red";
+        // document.querySelectorAll("p").style.color="red";
+        var x = document.querySelectorAll("p")
+        // console.log(x);
+
+
+
+
+
+        for (var i = 0; i < x.length; i++) {
+            x[i].style.color = "red";
+            document.write(x);
+            console.log(x);
+
+        }
+
+    </script>
+</body>
+
+</html>

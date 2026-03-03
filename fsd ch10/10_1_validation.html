@@ -1,0 +1,39 @@
+<!-- using documnet.forms
+    obj =document.forms["form_name"]["Element_name"].value;
+
+     using forms and element directly 
+    obj =document.forms.form_name.Element_name.value;  -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function fun() {
+            // var obj =document.f1.t1.value;
+
+            // var obj =document.forms["f1"]["t1"].value;
+            var obj = document.getElementById("i1").value
+            alert(obj)
+        }
+    </script>
+
+    <body>
+        <form action="" name="f1" onsubmit="fun()">
+            <input type="text" name="t1" id="i1">
+            <input type="submit">
+        </form>
+    </body>
+
+
+</body>
+
+</html>

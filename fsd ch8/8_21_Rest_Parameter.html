@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       //without rest parameter
+    //    function fun1 (a,b)
+    //    {
+    //     console.log(a)
+    //     console.log(b)
+
+    //    }
+
+    //    fun1(1,2,3,4,5,6)
+
+       console.log("********rest parameter(...parameter)*********")
+
+
+       function fun (a,b,...c)
+       {
+        console.log(a)
+        console.log(b)
+        console.log(c)
+       }
+    fun(1,2)
+    // fun(1,2,3,6,5)
+
+
+    console.log("*****************")
+
+    function func(a,b,...c){
+        console.log(`${a}${b}`)
+        console.log(c);
+        console.log(c[0]);
+        console.log(c.length)
+        console.log(c.indexOf("pqr"))
+        console.log(c.indexOf("abc"))
+
+    }
+    func("abc","def","pqr","mno","stu")
+
+       
+
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+     <div onmousedown="Mdown(this)" onmouseup= "Mup(this)"
+     style="background-color:blue;width:70px;height:30px; padding:20px;"> Click Me</div>
+
+  <script>
+    function Mdown(e){e.style.backgroundColor="yellow"; e.innerHTML="Click"}
+    function Mup(e){e.style.backgroundColor="pink"; e.innerHTML="Release"}
+  </script>
+    
+    
+</body>
+</html>

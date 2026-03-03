@@ -1,0 +1,46 @@
+<!-- /^w+@\w+(\.\w{2,3}+$)/
+
+start of emal
+must have @
+domain name ex gmail.com
+domain exstension
+end with $ -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function femail() {
+            var email = document.getElementById("e1").value;
+            const regex = /^\w+@\w+(\.\w{2,3})+$/ ;
+
+            if (regex.test(email)) {
+                alert("valid");
+            } else {
+                alert("invalid");
+            }
+        }
+    </script>
+
+    <form>
+        Email <input type="text" id="e1">
+        <input type="button" value="Check Email" onclick="femail()">
+    </form>
+
+
+
+
+
+
+
+</body>
+
+</html>

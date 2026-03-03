@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        // IIFE (Immediately Invoked Function Expression)
+        (function () {
+            document.write("called<br>");
+        })();
+
+        function msg() {
+            alert("Hi");
+        }
+
+        // Function called explicitly
+        function add(a, b) {
+            return a + b;
+        }
+
+        let result = add(5, 10);
+        document.write(result);
+    </script>
+</head>
+
+<body>
+    <br><br>
+    <input type="button" value="ok" onclick="msg()">
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun() {
+            pat = /^_|^@|^\d/;
+
+            uname = document.getElementById("t1").value;
+            pass = document.getElementById("p1").value;
+            if (uname.length == 0 || pass.length == 0) {
+                alert("not be blank")
+
+            }
+            else if (pat.test(uname)) {
+                alert("Enter proper Username")
+
+            }
+            else if (pass.length < 8 || pass.length > 12) {
+                alert("Enter valid password")
+            }
+            else {
+                alert("Welcome" + uname)
+            }
+
+
+        }
+
+
+
+
+    </script>
+
+</head>
+
+<body>
+    <form>
+        Name <input type="text" id="t1">
+
+        password<input type="password" id="p1">
+        <input type="submit" onclick="fun()">
+    </form>
+
+</body>
+
+</html>

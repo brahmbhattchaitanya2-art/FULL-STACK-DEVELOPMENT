@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- oninput   convert into upper  immediate effect -->
+
+    <label for="">oninput</label>
+    <input type="text" oninput="this.value=this.value.toUpperCase()">
+
+
+    <!-- onchange   convert into upper  when focus lose effect -->
+    <label for="">onchange   change after enter</label>
+    <input type="text" onchange="this.value=this.value.toUpperCase()">
+
+
+    <label for="">onfocus</label>
+
+    <input type="text" onfocus="this.value=this.value.toUpperCase()">
+
+
+
+
+    <label for="">onblur</label>
+
+    <input type="text" onblur="this.value=this.value.toUpperCase()">
+
+
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

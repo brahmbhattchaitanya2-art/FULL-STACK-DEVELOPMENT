@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body style="padding-top: 70px;">
+
+    <!-- MAIN NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-primary navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">My Coaching</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav1">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="nav1">
+                <ul class="navbar-nav mx-auto mb-2">
+                    <li class="nav-item"><a class="nav-link" href="#s1">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#s2">About</a></li>
+                    <li class="nav-item"><a class="nav-link disabled">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link disabled">Contact</a></li>
+                </ul>
+
+                <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#m1">Login</button>
+                <button class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#ca">Student</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CAROUSEL -->
+    <div id="ce" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button data-bs-target="#ce" data-bs-slide-to="0" class="active"></button>
+            <button data-bs-target="#ce" data-bs-slide-to="1"></button>
+            <button data-bs-target="#ce" data-bs-slide-to="2"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+                <img src="raj.jpg" class="d-block w-100">
+                <div class="carousel-caption">
+                    <h5>First Slide</h5>
+                    <p>Hello</p>
+                    <a href="#" class="btn btn-danger">View</a>
+                </div>
+            </div>
+
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="paris.jpg" class="d-block w-100">
+                <div class="carousel-caption">
+                    <h5>Second Slide</h5>
+                    <p>Hello</p>
+                    <a href="#" class="btn btn-danger">View</a>
+                </div>
+            </div>
+
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="bora.jpg" class="d-block w-100">
+                <div class="carousel-caption">
+                    <h5>Third Slide</h5>
+                    <p>Hello</p>
+                    <a href="#" class="btn btn-danger">View</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCROLLSPY NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-dark" id="sp">
+        <div class="container-fluid">
+            <ul class="navbar-nav nav-pills m-2">
+                <li class="nav-item"><a href="#s1" class="nav-link text-white">Home</a></li>
+                <li class="nav-item"><a href="#s2" class="nav-link text-white">About</a></li>
+                <li class="nav-item"><a href="#s3" class="nav-link text-white">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- SCROLLSPY SECTIONS -->
+    <div data-bs-spy="scroll" data-bs-target="#sp">
+        <div id="s1" class="container-fluid bg-white text-center text-dark" style="height:200px; padding:50px;">
+            <h1>Welcome</h1>
+            <p>Enjoy</p>
+        </div>
+
+        <div id="s2" class="container-fluid bg-warning text-white text-center" style="height:200px; padding:50px;">
+            <h1>About</h1>
+            <p>Enjoy</p>
+        </div>
+
+        <div id="s3" class="container-fluid bg-success text-white text-center" style="height:200px; padding:50px;">
+            <h1>Contact</h1>
+            <p>Enjoy</p>
+        </div>
+    </div>
+
+    <!-- PAGINATION -->
+    <nav>
+        <ul class="pagination pagination-lg justify-content-center">
+            <li class="page-item disabled"><a class="page-link">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="#s1">1</a></li>
+            <li class="page-item"><a class="page-link" href="#s2">2</a></li>
+            <li class="page-item"><a class="page-link" href="#s3">3</a></li>
+            <li class="page-item"><a class="page-link">Next</a></li>
+        </ul>
+    </nav>
+
+    <!-- LOGIN MODAL -->
+    <div class="modal fade" id="m1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title">Student Login</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <input type="email" class="form-control mb-2" placeholder="Enter Email">
+                    <input type="password" class="form-control" placeholder="Enter Password">
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-bs-dismiss="modal">Login</button>
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- OFFCANVAS -->
+    <div class="offcanvas offcanvas-end" id="ca">
+        <div class="offcanvas-header">
+            <h5>Student Login</h5>
+            <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p>Hello</p>
+        </div>
+    </div>
+
+</body>
+</html>

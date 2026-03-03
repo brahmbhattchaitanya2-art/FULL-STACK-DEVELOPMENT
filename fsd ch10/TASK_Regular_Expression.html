@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Regex Practice</title>
+
+    <script>
+        function check() {
+            var s = document.getElementById("txt").value;
+            var ch = document.getElementById("sel").value;
+            var pat;
+
+            if (ch == "1")      pat = /abc /;            // contains "abc"
+            else if (ch == "2") pat = /[abc]/i;           // a or b or c
+            else if (ch == "3") pat = /[^abc]/;       // not a b c
+            else if (ch == "4") pat = /[0-9]/;            // digit present
+            else if (ch == "5") pat = /[^0-9]/;           // not only digits
+            else if (ch == "6") pat = /(x|y)/i;           // x or y
+            else if (ch == "7") pat = /Bo*/;             // B then o*
+            else if (ch == "8") pat = /t$/i;              // ends with t
+            else if (ch == "9") pat = /^\d{10}$/;         // 10 digits
+            else if (ch == "10") pat = /^[A-Za-z]+$/;     // only letters
+            else if (ch == "11") pat = /^\d{4}$/;         // 4 digit number
+
+            if (pat.test(s))
+                alert("perfect");
+            else
+                alert("not perfect");
+        }
+    </script>
+</head>
+
+<body>
+
+    <label>Enter String:</label><br>
+    <input type="text" id="txt"><br><br>
+
+    <label>Select Condition:</label><br>
+    <select id="sel">
+        <option value="1">Contains "abc  WITH SPACE "</option>
+        <option value="2">Contains a or b or c</option>
+        <option value="3">Not a b c</option>
+        <option value="4">Digit present</option>
+        <option value="5">Not only digits</option>
+        <option value="6">Contains x or y</option>
+        <option value="7">B then o*</option>
+        <option value="8">Ends with t</option>
+        <option value="9">Exactly 10 digits</option>
+        <option value="10">Only letters</option>
+        <option value="11">Exactly 4 digits</option>
+    </select><br><br>
+
+    <input type="button" value="Check" onclick="check()">
+
+</body>
+</html>

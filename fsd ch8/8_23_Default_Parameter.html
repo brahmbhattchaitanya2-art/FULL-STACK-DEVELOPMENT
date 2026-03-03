@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+      function multiply(a,b)
+      {
+        return a*b
+      }
+      let num1=multiply(5)
+      console.log(num1)
+      //not a number bcz 1 parameter 5 only b not given
+      let num2=multiply(5,3)
+      console.log(num2)
+
+
+      console.log("********************")
+
+
+      function multiply(a,b=2)
+      {
+        return a*b
+      }
+      let num3=multiply(5)
+      console.log(num3)
+
+      let num4=multiply(5,3)
+      console.log(num4)
+
+
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

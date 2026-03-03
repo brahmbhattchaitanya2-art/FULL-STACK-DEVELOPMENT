@@ -1,0 +1,60 @@
+<!-- wrte js to handle folling mouse js
+if mouse is hover handle should yellow if mouse go out then turn red
+if find time button is click than it show date and time information
+if button name is red id clicked bg colr should red if button name is green id clicked bg colr should begreen -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        function f1(id)
+        {
+            id.style.backgroundColor="red";
+
+        }
+
+        function f2(id)
+        {
+            id.style.backgroundColor="green";
+            
+        }
+
+        function mover(e){ e.innerHTML="thankyou"
+       e.style.color="yellow"}
+
+      function mout(e){e.innerHTML="over" 
+      e.style.color="red"; }
+
+    </script>
+    
+
+   
+</head>
+<body  onclick="f1(this)"  onclick="f2(this)">
+    
+    <div onmouseover="mover(this)" onmouseout= "mout(this)">Mouse</div>
+    
+
+
+<button onclick="f1(this)">Red</button>
+<button  onclick="f2(this)">Green</button>
+
+
+
+
+
+
+
+
+
+   
+    
+</body>
+</html>
+
